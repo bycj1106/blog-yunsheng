@@ -52,16 +52,16 @@ export const navBarConfig: NavBarConfig = {
 
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/demo-avatar.png',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-  name: 'Lorem Ipsum',
-  bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+  name: '四夕云升',
+  bio: '大学本科学后端，毕业工作却误入前端的开发小白，离开AI就不会打字，离开代码就不会生活。',
   links: [
-    {
-      name: 'Twitter',
-      icon: 'fa6-brands:twitter',       // Visit https://icones.js.org/ for icon codes
-                                        // You will need to install the corresponding icon set if it's not already included
-                                        // `pnpm add @iconify-json/<icon-set-name>`
-      url: 'https://twitter.com',
-    },
+    // {
+    //   name: 'Twitter',
+    //   icon: 'fa6-brands:twitter',       // Visit https://icones.js.org/ for icon codes
+    //                                     // You will need to install the corresponding icon set if it's not already included
+    //                                     // `pnpm add @iconify-json/<icon-set-name>`
+    //   url: 'https://twitter.com',
+    // },
     {
       name: 'Steam',
       icon: 'fa6-brands:steam',
@@ -72,6 +72,11 @@ export const profileConfig: ProfileConfig = {
       icon: 'fa6-brands:github',
       url: 'https://github.com/bycj1106',
     },
+    {
+      name: 'Bilibili',
+      icon: 'fa6-brands:bilibili',
+      url: 'https://space.bilibili.com/12346201',
+    }
   ],
 }
 
