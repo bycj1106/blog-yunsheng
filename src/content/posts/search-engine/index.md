@@ -1,10 +1,10 @@
 ---
 title: 搜索引擎活用手册
 published: 2024-12-12
-description: "其实主要就是写如何干掉CSDN"
+description: "其实主要就是写如何干掉CSDN。"
 # image: "./cover.jpeg"
-tags: ["技巧"]
-category: 技巧
+tags: ["搜索引擎"]
+category: 资料
 draft: false
 ---
 
