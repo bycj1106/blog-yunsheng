@@ -1,6 +1,6 @@
 ---
 title: 快速上手 Google Tag Manager (GTM) 与 Microsoft Clarity 集成教程
-published: 2024-12-12
+published: 2025-04-11
 description: "Clarity - 微软大哥的永久免费的用户行为分析工具。"
 # image: "./cover.jpeg"
 tags: ["Clarity", "埋点"]
