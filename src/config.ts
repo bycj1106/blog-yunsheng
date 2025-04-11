@@ -15,9 +15,9 @@ export const siteConfig: SiteConfig = {
     fixed: false,     // Hide the theme color picker for visitors
   },
   banner: {
-    enable: false,
-    src: 'assets/images/demo-banner.png',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-    position: 'center',      // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
+    enable: true,
+    src: 'assets/images/banner.jpg',   // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+    position: 'top',      // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
     credit: {
       enable: false,         // Display the credit text of the banner image
       text: '',              // Credit text to be displayed
@@ -62,6 +62,11 @@ export const profileConfig: ProfileConfig = {
     //                                     // `pnpm add @iconify-json/<icon-set-name>`
     //   url: 'https://twitter.com',
     // },
+    {
+      name: 'tecdoc-yunsheng',
+      icon: 'fa6-brands:wikipedia-w',
+      url: 'https://tecdoc-yunsheng.cn',
+    },
     {
       name: 'Steam',
       icon: 'fa6-brands:steam',
