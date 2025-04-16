@@ -51,9 +51,9 @@ export const navBarConfig: NavBarConfig = {
 }
 
 export const profileConfig: ProfileConfig = {
-  avatar: 'assets/images/demo-avatar.png',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+  avatar: 'assets/images/avatar.png',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: '四夕云升',
-  bio: '大学本科学后端，毕业工作却误入前端的开发小白，离开AI就不会打字，离开代码就不会生活。',
+  bio: '大学本科苦学四年后端\n毕业工作却误入前端的开发小白\n同时还是个重度AI依赖症患者',
   links: [
     // {
     //   name: 'Twitter',
