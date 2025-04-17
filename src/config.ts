@@ -29,11 +29,11 @@ export const siteConfig: SiteConfig = {
     depth: 2                // Maximum heading depth to show in the table, from 1 to 3
   },
   favicon: [    // Leave this array empty to use the default favicon
-    // {
-    //   src: '/favicon/icon.png',    // Path of the favicon, relative to the /public directory
+    {
+      src: '/favicon/favicon.png',    // Path of the favicon, relative to the /public directory
     //   theme: 'light',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
     //   sizes: '32x32',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
-    // }
+    }
   ]
 }
 
@@ -53,9 +53,7 @@ export const navBarConfig: NavBarConfig = {
 export const profileConfig: ProfileConfig = {
   avatar: 'assets/images/avatar.png',  // Relative to the /src directory. Relative to the /public directory if it starts with '/'
   name: '四夕云升',
-  bio: `大学本科苦学四年后端
-  毕业工作却误入前端的开发小白
-  同时还是个重度AI依赖症患者`,
+  bio: '大学时学后端，毕业后干前端。表面开发小白，实则AI加持，偶尔灵光一现，又写一新BUG。',
   links: [
     // {
     //   name: 'Twitter',
