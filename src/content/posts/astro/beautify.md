@@ -6,9 +6,9 @@ tags: ["美化"]
 category: 工具
 ---
 
-继续处理博客的升级工作，决定把旧框架下的鼠标点击爆炸特效移植过来。这是在之前的 Hexo 博客中使用过的功能，链接是[hexo 博客美化](https://blog-yunsheng.cn/posts/old-post/hexo%E5%8D%9A%E5%AE%A2%E7%BE%8E%E5%8C%96/)。这个特效让页面点击时出现彩色粒子爆炸。
+继续处理博客的升级工作，决定把旧框架下的鼠标点击爆炸特效移植过来。这是在之前的 Hexo 博客中使用过的功能，链接是[hexo 博客美化](https://blog-yunsheng.cn/posts/old-post/hexo-beautify/)。这个特效让页面点击时出现彩色粒子爆炸。
 
-[使用的文件](http://blog-yunsheng.cn/utils/fireworks.min.js):
+[使用的文件](http://blog-yunsheng.cn/utils/fireworks.min.js)
 
 接下来，在 `Layout` 文件的 `<body>` 标签内添加必要的元素。过程很顺利，我把代码保存为一个单独的 JS 文件，然后引入它。具体的添加部分是：
 
