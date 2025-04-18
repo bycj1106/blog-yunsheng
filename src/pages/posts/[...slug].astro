@@ -6,43 +6,46 @@ import Markdown from '@components/misc/Markdown.astro'
 import I18nKey from '@i18n/i18nKey'
 import { i18n } from '@i18n/translation'
 import MainGridLayout from '@layouts/MainGridLayout.astro'
+import { getSortedPosts } from '@utils/content-utils'
 import { getDir, getPostUrlBySlug } from '@utils/url-utils'
 import { Icon } from 'astro-icon/components'
 import { licenseConfig } from 'src/config'
+import { walineConfig } from 'src/config'
 import PostMetadata from '../../components/PostMeta.astro'
 import ImageWrapper from '../../components/misc/ImageWrapper.astro'
 import { profileConfig, siteConfig } from '../../config'
 import { formatDateToYYYYMMDD } from '../../utils/date-utils'
-import { getSortedPosts } from '@utils/content-utils'
 
 export async function getStaticPaths() {
-  const blogEntries = await getSortedPosts();
-  return blogEntries.map(entry => ({
-    params: { slug: entry.slug },
-    props: { entry },
-  }))
+	const blogEntries = await getSortedPosts();
+	return blogEntries.map((entry) => ({
+		params: { slug: entry.slug },
+		props: { entry },
+	}));
 }
 
-const { entry } = Astro.props
-const { Content, headings } = await entry.render()
+const { entry } = Astro.props;
+const { Content, headings } = await entry.render();
 
-const { remarkPluginFrontmatter } = await entry.render()
+const { remarkPluginFrontmatter } = await entry.render();
 
 const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'BlogPosting',
-  headline: entry.data.title,
-  description: entry.data.description || entry.data.title,
-  keywords: entry.data.tags,
-  author: {
-    '@type': 'Person',
-    name: profileConfig.name,
-    url: Astro.site,
-  },
-  datePublished: formatDateToYYYYMMDD(entry.data.published),
-  inLanguage: (entry.data.lang ? entry.data.lang.replace('_', '-') : siteConfig.lang.replace('_', '-')),
-  // TODO include cover image here
-}
+	"@context": "https://schema.org",
+	"@type": "BlogPosting",
+	headline: entry.data.title,
+	description: entry.data.description || entry.data.title,
+	keywords: entry.data.tags,
+	author: {
+		"@type": "Person",
+		name: profileConfig.name,
+		url: Astro.site,
+	},
+	datePublished: formatDateToYYYYMMDD(entry.data.published),
+	inLanguage: entry.data.lang
+		? entry.data.lang.replace("_", "-")
+		: siteConfig.lang.replace("_", "-"),
+	// TODO include cover image here
+};
 ---
 <MainGridLayout banner={entry.data.image} title={entry.data.title} description={entry.data.description} lang={entry.data.lang} setOGTypeArticle={true} headings={headings}>
     <script is:inline slot="head" type="application/ld+json" set:html={JSON.stringify(jsonLd)}></script>
@@ -104,9 +107,30 @@ const jsonLd = {
             </Markdown>
 
             {licenseConfig.enable && <License title={entry.data.title} slug={entry.slug} pubDate={entry.data.published} class="mb-6 rounded-xl license-container onload-animation"></License>}
-
+            
         </div>
     </div>
+
+    <!-- Waline -->
+    {entry.data.comments !== false && (
+        <div class="card-base z-10 px-6 md:px-9 pt-6 pb-4 relative w-full mb-4">
+            <div id="waline" />
+            <script type="module" is:inline define:vars={{ walineConfig }}>
+            import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+            function loadWaline() {
+                init({
+                    el: '#waline',
+                    serverURL: walineConfig.serverURL,
+                    login: walineConfig.login,
+                    path: location.pathname,
+                    wordLimit: ["2", "1000"],
+                    dark: '.dark',
+                });
+            }
+            loadWaline();
+            </script>
+        </div>
+    )}
 
     <div class="flex flex-col md:flex-row justify-between mb-4 gap-4 overflow-hidden w-full">
         <a href={entry.data.nextSlug ? getPostUrlBySlug(entry.data.nextSlug) : "#"}
