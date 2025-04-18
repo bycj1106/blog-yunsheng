@@ -1,7 +1,7 @@
 ---
 title: 本地远程连接云服务器上Docker下的MySQL
 description: '虚拟机烧不动了，还是买了云服务器，先把环境再慢慢重新部署完吧。'
-published: 2023-11-12 14:51:26
+published: 2023-06-12 14:51:26
 tags: ["Docker"]
 category: 开发
 ---

@@ -1,7 +1,7 @@
 ---
 title: Swiper11在Vue2项目中的使用
 description: 'swiper11在vue2项目中的使用记录，有一些坑，好在爬出来了。'
-published: 2024-05-10 19:37:05
+published: 2024-04-10 19:37:05
 category: 开发
 tags: ["前端开发","Swiper"]
 ---

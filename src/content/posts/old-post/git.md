@@ -3,7 +3,7 @@ title: 用Git上传项目到GitHub或Gitee
 description: '需要提前配置好Git，以下是上传本地项目到GitHub或Gitee的方法的简单记录，GitHub仓库与Gitee仓库上传方法通用。'
 category: 开发
 tags: ["Git"]
-published: 2023-04-12 00:19:50
+published: 2022-04-12 00:19:50
 ---
 
 

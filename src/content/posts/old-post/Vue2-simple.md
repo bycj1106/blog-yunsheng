@@ -11,6 +11,10 @@ tags: ["前端开发"]
 
 最近听到一首挺好听的歌，《若月亮没来》。
 
+------
+
+没啥用的一篇文章，以后自己的这些东西都会改为放到[另一个网站里](https://tecdoc-yunsheng.cn/)
+
 ## vue2 安装
 
 vue2 的 CLI 与 vue3 的 CLI 有所不同，应参照[该文档](https://cli.vuejs.org/#getting-started)进行安装
