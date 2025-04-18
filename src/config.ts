@@ -92,6 +92,6 @@ export const licenseConfig: LicenseConfig = {
 };
 
 export const walineConfig = {
-  serverURL: '',
+  serverURL: 'https://comments-yunsheng.online',
   login: 'force',
 }
