@@ -2,7 +2,7 @@
 title: Vercel+CloudFlare实现近零成本Twikoo评论系统CDN加速
 description: '6块钱一年的奶茶（域名）钱，加一两个小时的宝贵时间，同样也可用于网站加速等等。'
 published: 2023-11-23 09:54:03
-categories: 开发
+category: 开发
 image: "https://wallhalla.com/wallpaper/1/variant/preview/lg"
 tags: ["Twikoo","CDN","CloudFlare"]
 ---

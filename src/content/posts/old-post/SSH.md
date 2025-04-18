@@ -1,7 +1,7 @@
 ---
 title: 通过SSH连接虚拟机及其中Docker下的MySQL数据库
 description: '记录一下虚拟机网络之间连接的实现。'
-published: 2023-11-10 21:10:11
+published: 2023-06-10 21:10:11
 category: 开发
 tags: ["SSH", "Docker"]
 ---

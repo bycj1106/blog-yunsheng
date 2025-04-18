@@ -1,7 +1,7 @@
 ---
 title: CDN访问异常之重定向次数过多
 description: '为博客开启CDN后访问出现重定向次数过多异常的解决。'
-published: 2023-11-21 15:53:37
+published: 2023-09-21 15:53:37
 category: 开发
 tags: ["杂症", "计算机网络"]
 ---

@@ -1,7 +1,7 @@
 ---
 title: hexo博客美化
 description: '一些自定义美化组件引用方法，虽然这些内容花了我不少时间才弄好，但还是属于文字垃圾，对不起我太菜了::>_<::。'
-published: 2023-04-12 14:00:29
+published: 2022-04-12 14:00:29
 category: 工具
 image: https://wallhalla.com/wallpaper/50/variant/preview/lg
 tags: [ "hexo", "美化"]

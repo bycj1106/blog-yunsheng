@@ -1,7 +1,7 @@
 ---
 title: 基于Astro的全新静态网站搭建部署回顾
 description: '一个专门用来记录生活的网站。'
-published: 2023-12-04 12:02:01
+published: 2023-06-04 12:02:01
 image: "https://wallhalla.com/wallpaper/67/variant/preview/lg"
 category: 开发
 tags: ["astro", "前端开发"]
