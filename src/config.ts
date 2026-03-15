@@ -1,4 +1,5 @@
 import type {
+	ExpressiveCodeConfig,
 	LicenseConfig,
 	NavBarConfig,
 	ProfileConfig,
@@ -9,31 +10,28 @@ import { LinkPreset } from "./types/config";
 export const siteConfig: SiteConfig = {
 	title: "云升的小窝",
 	subtitle: "此心安处是吾乡",
-	lang: "zh_CN", // 'en', 'zh_CN', 'zh_TW', 'ja', 'ko', 'es', 'th'
+	lang: "zh_CN",
 	themeColor: {
-		hue: 250, // Default hue for the theme color, from 0 to 360. e.g. red: 0, teal: 200, cyan: 250, pink: 345
-		fixed: false, // Hide the theme color picker for visitors
+		hue: 250,
+		fixed: false,
 	},
 	banner: {
 		enable: true,
-		src: "assets/images/banner.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
-		position: "top", // Equivalent to object-position, only supports 'top', 'center', 'bottom'. 'center' by default
+		src: "assets/images/banner.jpg",
+		position: "top",
 		credit: {
-			enable: false, // Display the credit text of the banner image
-			text: "", // Credit text to be displayed
-			url: "", // (Optional) URL link to the original artwork or artist's page
+			enable: false,
+			text: "",
+			url: "",
 		},
 	},
 	toc: {
-		enable: true, // Display the table of contents on the right side of the post
-		depth: 2, // Maximum heading depth to show in the table, from 1 to 3
+		enable: true,
+		depth: 2,
 	},
 	favicon: [
-		// Leave this array empty to use the default favicon
 		{
-			src: "/favicon/favicon.png", // Path of the favicon, relative to the /public directory
-			//   theme: 'light',              // (Optional) Either 'light' or 'dark', set only if you have different favicons for light and dark mode
-			//   sizes: '32x32',              // (Optional) Size of the favicon, set only if you have favicons of different sizes
+			src: "/favicon/favicon.png",
 		},
 	],
 };
@@ -45,24 +43,17 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.About,
 		{
 			name: "GitHub",
-			url: "https://github.com/bycj1106", // Internal links should not include the base path, as it is automatically added
-			external: true, // Show an external link icon and will open in a new tab
+			url: "https://github.com/bycj1106",
+			external: true,
 		},
 	],
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	avatar: "assets/images/avatar.png",
 	name: "四夕云升",
 	bio: "大学时学后端，毕业后干前端。表面开发小白，实则AI加持，偶尔灵光一现，又写一新BUG。",
 	links: [
-		// {
-		//   name: 'Twitter',
-		//   icon: 'fa6-brands:twitter',       // Visit https://icones.js.org/ for icon codes
-		//                                     // You will need to install the corresponding icon set if it's not already included
-		//                                     // `pnpm add @iconify-json/<icon-set-name>`
-		//   url: 'https://twitter.com',
-		// },
 		{
 			name: "tecdoc-yunsheng",
 			icon: "fa6-brands:wikipedia-w",
@@ -95,4 +86,8 @@ export const licenseConfig: LicenseConfig = {
 export const walineConfig = {
 	serverURL: "https://comments-yunsheng.online",
 	login: "force",
+};
+
+export const expressiveCodeConfig: ExpressiveCodeConfig = {
+	theme: "github-dark",
 };
